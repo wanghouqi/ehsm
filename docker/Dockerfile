@@ -82,7 +82,7 @@ RUN apt-get update &&apt-get install -y \
 
 # Build App from source
 WORKDIR /home
-RUN git clone --recursive -b $TAG_VERSION https://github.com/intel/ehsm.git \
+RUN git clone --recursive -b update_dkeyserver_k8s https://github.com/wanghouqi/ehsm.git \
     && cd ehsm \
     && make
 
